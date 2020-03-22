@@ -5,10 +5,10 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/Jpet_final_split/src/main/resources/jpet.feature",
-		plugin = {"pretty", "html:reports/cucumber-html-report"},
+		features = "src/main/resources/jpet.Feature",
+		plugin = {"pretty", "html:reports/cucumber-html-report","json:reports/cucumber-html-report/jsonreport"},
 		tags = {"@jpet_test_cases1"},
-		glue = {"com.steps"},
+		glue = {"Com.steps"},
 		monochrome = true	
 		)
 public class Jpet_Application_runner {
